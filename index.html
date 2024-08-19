@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hemanth Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="styles.css">
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!--<link rel="stylesheet" href="css/style.css">-->
+    
+
+    <style>
+        /*======================================
+        //--//-->   ABOUT
+        ======================================*/
+        /* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+a {
+    color: #ffbd39;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff6347;
+    text-decoration: none;
+}
+
+/* Navbar */
+.navbar {
+    padding: 1rem;
+    background-color: #343a40;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: #ffbd39;
+}
+
+.nav-link {
+    color: #fff;
+    margin-left: 1rem;
+}
+
+.nav-link:hover {
+    color: #ffbd39;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(to bottom right, #007bff, #00c6ff);
+    color: #fff;
+    text-align: left;
+}
+
+.hero .text h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero .text .subheading {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero .text h1 span {
+    color: #ffbd39;
+}
+
+/* Typing Animation */
+#typing-animation {
+    border-right: 2px solid rgba(255,255,255,.75);
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 1.5rem;
+    letter-spacing: .15em;
+    animation: blink-caret .75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgba(255,255,255,.75); }
+}
+
+/* About Section */
+#about-section {
+    padding: 6rem 0;
+    background-color: #fff;
+    color: #212529;
+}
+
+#about-section .title-s {
+    font-weight: 700;
+    color: #007bff;
+}
+
+#about-section .progress {
+    background-color: #d6d8db;
+    border-radius: 0;
+    height: .7rem;
+}
+
+#about-section .progress-bar {
+    background-color: #007bff;
+    height: .7rem;
+}
+
+/* Project Section */
+#project-section {
+    padding: 6rem 0;
+    background-color: #f8f9fa;
+}
+
+.zoom-effect {
+    overflow: hidden;
+    transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+    transform: scale(1.1);
+}
+
+/* Contact Section */
+#contact-section {
+    padding: 6rem 0;
+    background-color: #fff;
+    color: #212529;
+}
+
+#contact-section .icon {
+    font-size: 2.5rem;
+    color: #007bff;
+}
+
+#contact-section .box {
+    border: 1px solid #dee2e6;
+    border-radius: .25rem;
+    background-color: #f8f9fa;
+    padding: 2rem;
+}
+
+#contact-section .box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#contact-section .box p a {
+    color: #007bff;
+}
+
+#contact-section .box p a:hover {
+    color: #ffbd39;
+}
+
+/* Footer */
+footer {
+    padding: 2rem 0;
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+}
+
+footer a {
+    color: #ffbd39;
+}
+
+footer a:hover {
+    color: #ff6347;
+}
+
+        .about-mf .box-shadow-full {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+
+        .about-mf .about-img {
+            margin-bottom: 2rem;
+        }
+
+        .about-mf .about-img img {
+            margin-left: 10px;
+        }
+
+        .skill-mf .progress {
+            /* background-color: #cde1f8; */
+            margin: .5rem 0 1.2rem 0;
+            border-radius: 0;
+            height: .7rem;
+        }
+
+        .skill-mf .progress .progress-bar {
+            height: .7rem;
+            background-color: #ffbd39;
+        }
+
+        /* Animation styles */
+        #typing-animation {
+            position: relative;
+            font-size: 30px;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 3s steps(20, end) infinite;
+        }
+
+        #typing-animation:before {
+            content: "";
+            /* position: absolute; */
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background-color: #ccc;
+            animation: typing-cursor 0.5s ease-in-out infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes typing-cursor {
+            from {
+                width: 5px;
+            }
+            to {
+                width: 0;
+            }
+        }
+
+        /* project image zoom effect */
+        .zoom-effect {
+            overflow: hidden;
+            transition: transform 0.3s ease-out;
+        }
+
+        .zoom-effect:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Hemanth</a>
+            <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav nav ml-auto">
+                    <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+                    <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+                    <!-- <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li> -->
+                    <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+                    <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="home-section" class="hero">
+        <div class="home-slider  owl-carousel">
+            <div class="slider-item ">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+                        <div class="one-third js-fullheight order-md-last img" style="background-image:url();">
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                            <div class="text">
+                                <span class="subheading">Hello!</span>
+                                <h1 class="mb-4 mt-3">I'm <span>Hemanth</span></h1>
+                              <p>Hello! I'm Hemanth, a passionate web developer with a love for creating dynamic and user-friendly websites.I'm currently pursuing a Bachelor's degree in Computer Science at VIGNAN University.I have a strong passion for working with HTML, CSS, and JavaScript.</p>
+
+                                <!-- Element to contain animated typing -->
+                                <span id="typing-animation"></span>
+
+                                
+                                    <br>
+                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="row d-flex align-items-stretch">
+                    <!-- <div class="row d-flex"> -->
+                    <div class="col-md-6 col-lg-5 d-flex">
+                        <div class="img-about img d-flex align-items-stretch">
+                            <div class="overlay">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-7">
+                                        <div class="about-info">
+                                            <p><span class="title-s">Name: </span> <span>Hemanth</span></p>
+                                            <p><span class="title-s">Role: </span> <span>Student</span></p>
+                                            <!-- <p><span class="title-s">Experience: </span> <span>5 Years 3 Months</span></p> -->
+                                            <p><span class="title-s">Address: </span> <span>Andhra Pradesh, India</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-3">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h2 class="mb-4">Contact Me</h2>
+        <p>Below are the details to reach out to me!</p>
+      </div>
+    </div>
+    <div class="row d-flex contact-info mb-5">
+      <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+        <div class="align-self-stretch box p-4 text-center">
+          <div class="icon d-flex align-items-center justify-content-center">
+            <span class="icon-map-signs"></span>
+          </div>
+          <h3 class="mb-4">Address</h3>
+          <p>Andhra Pradesh, India</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+        <div class="align-self-stretch box p-4 text-center">
+          <div class="icon d-flex align-items-center justify-content-center">
+            <span class="icon-phone2"></span>
+          </div>
+          <h3 class="mb-4">Contact Number</h3>
+          <p><a href="tel://+919550393961">+91 919550393961</a></p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+        <div class="align-self-stretch box p-4 text-center">
+          <div class="icon d-flex align-items-center justify-content-center">
+            <span class="icon-paper-plane"></span>
+          </div>
+          <h3 class="mb-4">Email Address</h3>
+          <p><a href="mailto:hemanthchowdary260">hemanthchowdary260@gmail.com</a></p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+        <div class="align-self-stretch box p-4 text-center">
+          <div class="icon d-flex align-items-center justify-content-center">
+            <span class="icon-globe"></span>
+          </div>
+          <!-- Additional Information if needed -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <br>
+      <br>
+      <div class="row justify-content-center">
+        <div class="col-md-7 ftco-animate text-center">
+          <!-- Optional additional section -->
+        </div>
+      </div>
